@@ -1,0 +1,215 @@
+# ==================================================
+# Environment Variables / Secrets
+# ==================================================
+
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+
+# ==================================================
+# Gmail OAuth Secrets
+# ==================================================
+
+credentials.json
+token.json
+
+**/credentials.json
+**/token.json
+
+
+# ==================================================
+# Python
+# ==================================================
+
+venv*/
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.so
+*.pyd
+
+.python-version
+
+venv/
+.venv/
+env/
+env*/
+ENV/
+
+
+# ==================================================
+# Python Build
+# ==================================================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+
+# ==================================================
+# Testing / Coverage
+# ==================================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+test-results/
+
+
+# ==================================================
+# Type Checkers / Linters
+# ==================================================
+
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+
+# ==================================================
+# React / Node
+# ==================================================
+
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+node_modules/
+dist/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ==================================================
+# Vite
+# ==================================================
+
+frontend/.vite/
+.vite/
+
+
+# ==================================================
+# Runtime Database
+# ==================================================
+
+data/database/*.db
+data/database/*.db-shm
+data/database/*.db-wal
+data/database/*.sqlite
+data/database/*.sqlite3
+
+
+# ==================================================
+# Uploaded User Files
+# ==================================================
+
+data/uploads/*
+
+# Keep directory in Git
+!data/uploads/.gitkeep
+
+
+# ==================================================
+# Persistent Vector Memory
+# ==================================================
+
+data/memory/*.index
+data/memory/*.pkl
+data/memory/*.faiss
+
+
+# ==================================================
+# Generated Vector Stores
+# ==================================================
+
+data/vectorstores/
+data/indexes/
+
+
+# ==================================================
+# Logs
+# ==================================================
+
+*.log
+logs/
+
+
+# ==================================================
+# Temporary Files
+# ==================================================
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+.DS_Store
+Thumbs.db
+
+
+# ==================================================
+# IDE
+# ==================================================
+
+.vscode/
+.idea/
+
+*.code-workspace
+
+
+# ==================================================
+# Jupyter
+# ==================================================
+
+.ipynb_checkpoints/
+
+
+# ==================================================
+# Local Models / Caches
+# ==================================================
+
+.cache/
+huggingface/
+models/
+
+token.expired*.json
+# ==================================================
+# Docker Local Overrides
+# ==================================================
+
+docker-compose.override.yml
+
+
+
+!data/database/.gitkeep
+!data/memory/.gitkeep
+
+
+# ==================================================
+# Generated Model Cache
+# ==================================================
+
+data/cache/
+
+
+# ==================================================
+# Generated Knowledge Base Vector Store
+# ==================================================
+
+data/vector_store/

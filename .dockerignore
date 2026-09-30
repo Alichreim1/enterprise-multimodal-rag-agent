@@ -1,0 +1,51 @@
+# Python environments
+env4/
+env/
+env*/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend dependencies/build
+frontend/node_modules/
+frontend/dist/
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Secrets
+.env
+.env.*
+credentials.json
+token.json
+
+# Runtime data
+data/uploads/
+data/database/
+data/memory/
+data/cache/
+
+# Tests and coverage
+tests/
+htmlcov/
+.coverage
+coverage.xml
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
